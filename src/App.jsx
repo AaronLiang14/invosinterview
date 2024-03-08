@@ -1,3 +1,5 @@
+import FirstPage from "./sections/firstPage";
+
 export default function App() {
-  return <div className="App">hello invos</div>;
+  return <FirstPage />;
 }
