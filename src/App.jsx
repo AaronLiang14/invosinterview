@@ -1,5 +1,11 @@
+import Features from "./sections/features";
 import FirstPage from "./sections/firstPage";
 
 export default function App() {
-  return <FirstPage />;
+  return (
+    <>
+      <FirstPage />
+      <Features />
+    </>
+  );
 }
