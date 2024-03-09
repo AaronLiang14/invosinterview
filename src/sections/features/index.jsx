@@ -55,7 +55,7 @@ export default function Features() {
                   <Flex alignItems="center" gap={4}>
                     <Icon
                       icon={item.icon}
-                      className="w-12 h-12 bg-[#E5F4F2] text-[#86CBBF] rounded-xl p-2"
+                      className="h-12 w-12 rounded-xl bg-[#E5F4F2] p-2 text-[#86CBBF]"
                     />
                     <Text fontSize="2xl">{item.describe}</Text>
                   </Flex>
@@ -75,7 +75,7 @@ export default function Features() {
           <Box
             position="relative"
             flex
-            justifyCenter
+            justifyContent="center"
             className=" bg-theme-secondary"
             rounded="full"
             w={{ base: "80", sm: "96" }}
