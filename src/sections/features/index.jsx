@@ -91,7 +91,7 @@ export default function Features() {
               <Star size={24} bgColor="#c16f66" coverColor="#F8F9FF" />
             </Box>
             <Box
-              pos="absolute"
+              position="absolute"
               top={{ base: "-28", sm: "-24" }}
               left={{ base: "4", sm: "10" }}
             >
