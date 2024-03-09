@@ -30,7 +30,7 @@ export default function RealStories() {
     <Flex
       direction="column"
       justifyContent="center"
-      className="bg-theme-secondary"
+      bg="#F8D57E"
       h={{ base: "auto", sm: "100vh" }}
       pb={{ base: 12, sm: 0 }}
     >

@@ -1,5 +1,7 @@
 import { Box, Card, CardBody, Flex, Grid, Text } from "@chakra-ui/react";
 import { Icon } from "@iconify/react";
+import Star from "../../components/icon/star";
+import Iphone from "../../components/iphone";
 
 export default function Features() {
   const features = [
@@ -76,62 +78,29 @@ export default function Features() {
             position="relative"
             flex
             justifyContent="center"
-            className=" bg-theme-secondary"
+            bg="#F8D57E"
             rounded="full"
             w={{ base: "80", sm: "96" }}
             h={{ base: "80", sm: "96" }}
           >
-            {" "}
-            <Grid
-              templateColumns="repeat(2, 1fr)"
-              bg="#c16f66"
-              w="24"
-              h="24"
+            <Box
               position="absolute"
               left={{ base: -12, sm: -24 }}
               top={{ base: -12, sm: 8 }}
             >
-              {" "}
-              <Box w="12" h="12" bg="#F8F9FF" roundedBottomRight="full"></Box>
-              <Box w="12" h="12" bg="#F8F9FF" roundedBottomLeft="full"></Box>
-              <Box w="12" h="12" bg="#F8F9FF" roundedTopRight="full"></Box>
-              <Box w="12" h="12" bg="#F8F9FF" roundedTopLeft="full"></Box>
-            </Grid>
-            <Grid
-              templateColumns="repeat(2, 1fr)"
-              bg="#FFF"
-              w="12"
-              h="12"
-              position="absolute"
-              bottom="32"
-              right={{ base: 1, sm: 4 }}
+              <Star size={24} bgColor="#c16f66" coverColor="#F8F9FF" />
+            </Box>
+            <Box
+              pos="absolute"
+              top={{ base: "-28", sm: "-24" }}
+              left={{ base: "4", sm: "10" }}
             >
-              {" "}
-              <Box
-                w="6"
-                h="6"
-                className="bg-theme-secondary"
-                roundedBottomRight="full"
-              ></Box>
-              <Box
-                w="6"
-                h="6"
-                className="bg-theme-secondary"
-                roundedBottomLeft="full"
-              ></Box>
-              <Box
-                w="6"
-                h="6"
-                className="bg-theme-secondary"
-                roundedTopRight="full"
-              ></Box>
-              <Box
-                w="6"
-                h="6"
-                className="bg-theme-secondary"
-                roundedTopLeft="full"
-              ></Box>
-            </Grid>
+              <Iphone height="96" width="72" />
+            </Box>
+
+            <Box position="absolute" bottom="40" right={{ base: 14, sm: 16 }}>
+              <Star size={12} bgColor="#FFF" coverColor="#F8D57E" />
+            </Box>
           </Box>
         </Flex>
       </Flex>

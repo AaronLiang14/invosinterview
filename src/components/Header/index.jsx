@@ -6,7 +6,7 @@ export default function Header() {
   return (
     <Flex as="header" h={20} items="center" mx={12}>
       <Flex mr="auto" alignItems="center">
-        <Icon icon="solar:tv-outline" className="w-8 h-8 mr-2" />
+        <Icon icon="solar:tv-outline" className="mr-2 h-8 w-8" />
         <Text
           fontWeight="bold"
           fontSize={"2xl"}
@@ -20,7 +20,8 @@ export default function Header() {
       </Flex>
       <Flex gap={12} alignItems="center" fontWeight="bold">
         <Text
-          className="text-theme-primary text-xl"
+          color="#009379"
+          fontSize="xl"
           display={{ base: "none", sm: "block" }}
         >
           Contact
@@ -35,9 +36,9 @@ export default function Header() {
         <IndexPageButton colorScheme={"teal"} wording={"Get Started"}>
           <Icon
             icon="octicon:rocket-24"
-            className="h-5 w-5 mr-2 hidden sm:block"
+            className="mr-2 hidden h-5 w-5 sm:block"
           />
-          <Icon icon="maki:arrow" className="h-5 w-5 mr-2 sm:hidden" />
+          <Icon icon="maki:arrow" className="mr-2 h-5 w-5 sm:hidden" />
         </IndexPageButton>
       </Flex>
     </Flex>
