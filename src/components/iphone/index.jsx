@@ -30,13 +30,48 @@ export default function Iphone({ width }) {
         </Box>
 
         <Box pos="relative" gridRow="span 2">
-          <Box position="relative">
+          <Box position="relative h-24 w-24">
             <Icon
               icon="mdi:circle-half"
               className="absolute -left-12 m-0 h-60 w-10/12 rotate-[235deg] text-[#FF6251]
             "
             ></Icon>
-            {/* <div className="absolute  h-1 w-72 -rotate-[35deg] bg-[#66c02a]"></div> */}
+            <Box
+              position="absolute"
+              left="-3"
+              top="36"
+              h="1px"
+              w="44"
+              transform="rotate(-35deg)"
+              bg="#fff"
+            />
+            <Box
+              position="absolute"
+              left="-2"
+              top="40"
+              h="1px"
+              w="44"
+              transform="rotate(-35deg)"
+              bg="#fff"
+            />
+            <Box
+              position="absolute"
+              left="-1"
+              top="44"
+              h="1px"
+              w="44"
+              transform="rotate(-35deg)"
+              bg="#fff"
+            />
+            <Box
+              position="absolute"
+              left="-1"
+              top="48"
+              h="1px"
+              w="44"
+              transform="rotate(-35deg)"
+              bg="#fff"
+            />
           </Box>
 
           <Box
